@@ -1,5 +1,3 @@
-# mylist = [1,2,3]
-
 # use range function for iteration
 # for num in range(10): #start, stop, step
 #     print(num)
@@ -16,8 +14,12 @@
 # list(range(2,20,3))
 # [0, 2, 4, 6, 8, 10]
 
+# for num in range(0,11,2): #start, stop, step
+#     print(num)
 
-# enumerate function - can take in iterable object and returns index counter and the object or element itself
+# enumerate function - can take in iterable object and 
+# returns index counter and the object or element itself
+
 # index_count 
 # index_count = 0
 
@@ -95,5 +97,5 @@
 # mynum = randint(0,10)
 # print(mynum)
 
-result = input('Enter a number: ')
-print(int(result))
+# result = input('Enter a number: ')
+# print(int(result))
