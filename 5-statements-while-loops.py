@@ -18,7 +18,11 @@
 #     print("X is no longer less than 5")
 
 
-## break, continue, pass
+# ## break, continue, pass
+# break: Breaks out of the current closest enclosing loop.
+# continue: Goes to the top of the closest enclosing loop.
+# pass: Does nothing at all.
+
 # pass
 # x = [1,2,3]
 
@@ -34,6 +38,21 @@
 #         continue
 #     print(letter)
 
+# x = 0
+
+# while x < 10:
+#     print('x is currently: ',x)
+#     print('x is still less than 10, adding 1 to x')
+#     x+=1
+#     if x==3:
+#         print('x==3')
+#     if x==8:
+#         print('x==8')
+#     else:
+#         print('continuing...')
+#         continue
+
+
 # break - breaks out of the current closest enclosing loop
 # mystring = "Scotty"
 # for letter in mystring:
@@ -41,9 +60,27 @@
 #         break
 #     print(letter)
 
+# x = 0
+# while x < 5:
+#     if x ==2:
+#         break
+#     print(x)
+#     x += 1
+
 x = 0
-while x < 5:
-    if x ==2:
+
+while x < 10:
+    print('x is currently: ',x)
+    print('x is still less than 10, adding 1 to x')
+    x+=1
+    if x==3:
+        print('Breaking because x==3')
         break
-    print(x)
-    x += 1
+    else:
+        print('continuing...')
+        continue
+
+# Example of infinite loop. Avoid this
+# while True:
+#     print("I'm stuck in an infinite loop!")
+
