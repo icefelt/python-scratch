@@ -44,8 +44,20 @@ However, it's good practice to put them in so you or other people can easily und
 After all this you begin writing the code you wish to execute.
 '''
 
-### Simple example of a function
-def say_hello():
-    print('hello')
+# ### Simple example of a function
+# def say_hello():
+#     print('hello')
 
-say_hello()
+# say_hello()
+
+
+### Accepting parameters (arguments) in functions
+# write a funciton greeting people with their name
+
+def greeting(name):
+    print(f'Hello {name}')
+
+greeting('Purple People Eater')
+
+
+
