@@ -22,5 +22,13 @@
 #     if num % 2 == 0:
 #         print(num)
 
-for num in range(0,11,2):
-    print(num)
+# for num in range(0,11,2):
+#     print(num)
+
+
+### 3
+# Use a List Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.
+
+list = [num for num in range(1,50) if num % 3 == 0]
+print(list)
+
