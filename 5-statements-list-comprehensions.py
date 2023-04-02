@@ -30,8 +30,14 @@
 
 ### Example 4
 # convert Celsius to Fahrenheit
-celsius = [0,10,20.1,34.5]
+# celsius = [0,10,20.1,34.5]
 
-fahrenheit = [((9/5)*temp + 32) for temp in celsius]
-print(fahrenheit)
+# fahrenheit = [((9/5)*temp + 32) for temp in celsius]
+# print(fahrenheit)
 
+
+## Example 5
+# nested list comprehension
+
+lst = [x**2 for x in [x**2 for x in range(11)]]
+print(lst)
