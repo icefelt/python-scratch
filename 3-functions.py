@@ -54,10 +54,26 @@ After all this you begin writing the code you wish to execute.
 ### Accepting parameters (arguments) in functions
 # write a funciton greeting people with their name
 
-def greeting(name):
-    print(f'Hello {name}')
+# def greeting(name):
+#     print(f'Hello {name}')
 
-greeting('Purple People Eater')
+# greeting('Purple People Eater')
 
 
+### Using return keyword to save the resulting variable
+# return allows a function to return a result and store it as a variable
+# or in another manner. 
+
+# def add_num(num1,num2):
+#     return num1+num2
+
+# result = add_num(63,81)
+# print(result)
+
+# using return with strings
+def add_num(num1,num2):
+    return num1+num2
+
+result = add_num('one','two')
+print(result)
 
