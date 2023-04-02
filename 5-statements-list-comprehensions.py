@@ -24,9 +24,14 @@
 ### Example 3
 # add an if statement to list comprehension
 # check for numbers in a range
-lst = [x for x in range(100) if x % 2 == 0]
-print(lst)
+# lst = [x for x in range(100) if x % 2 == 0]
+# print(lst)
 
 
 ### Example 4
 # convert Celsius to Fahrenheit
+celsius = [0,10,20.1,34.5]
+
+fahrenheit = [((9/5)*temp + 32) for temp in celsius]
+print(fahrenheit)
+
