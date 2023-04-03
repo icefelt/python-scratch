@@ -181,7 +181,7 @@ After all this you begin writing the code you wish to execute.
 # print(check_even_list([1,3,5]))
 
 
-# Return all even numbers in a list
+### Return all even numbers in a list
 # def check_even_list(num_list):
 #     even_numbers = []
 
@@ -197,4 +197,41 @@ After all this you begin writing the code you wish to execute.
 
 # print(check_even_list([1,2,3,4,5,6]))
 # print(check_even_list([1,3,5,7]))
+
+### Return tuples for unpacking
+# we can loop through a list of tuples and unpack the values within
+
+# stock_prices = [('AAPL',200),('GOOG',300),('MSFT',400)]
+# for item in stock_prices:
+#     print(item)
+
+# stock_prices = [('AAPL',200),('GOOG',300),('MSFT',400)]
+# for stock,price in stock_prices:
+#     print(stock)
+#     print(price)
+
+
+# Functions often return tuples, to easily return multiple results for later
+# employee of the month function will return both the name and number of hours worked
+# for the top performer (determined by number of hours worked)
+work_hours = [('Abby',100),('Billy',400),('Cassie',800)]
+
+def employee_check(work_hours):
+    
+    # Set some max value to intially beat, like zero hours
+    current_max = 0
+    # Set some empty value before the loop
+    employee_of_month = ''
+    
+    for employee,hours in work_hours:
+        if hours > current_max:
+            current_max = hours
+            employee_of_month = employee
+        else:
+            pass
+    
+    # Notice the indentation here
+    return (employee_of_month,current_max)
+
+print(employee_check(work_hours))
 
