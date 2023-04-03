@@ -214,24 +214,82 @@ After all this you begin writing the code you wish to execute.
 # Functions often return tuples, to easily return multiple results for later
 # employee of the month function will return both the name and number of hours worked
 # for the top performer (determined by number of hours worked)
-work_hours = [('Abby',100),('Billy',400),('Cassie',800)]
+# work_hours = [('Abby',100),('Billy',400),('Cassie',800)]
 
-def employee_check(work_hours):
+# def employee_check(work_hours):
     
-    # Set some max value to intially beat, like zero hours
-    current_max = 0
-    # Set some empty value before the loop
-    employee_of_month = ''
+#     # Set some max value to intially beat, like zero hours
+#     current_max = 0
+#     # Set some empty value before the loop
+#     employee_of_month = ''
     
-    for employee,hours in work_hours:
-        if hours > current_max:
-            current_max = hours
-            employee_of_month = employee
-        else:
-            pass
+#     for employee,hours in work_hours:
+#         if hours > current_max:
+#             current_max = hours
+#             employee_of_month = employee
+#         else:
+#             pass
     
-    # Notice the indentation here
-    return (employee_of_month,current_max)
+#     # Notice the indentation here
+#     return (employee_of_month,current_max)
 
-print(employee_check(work_hours))
+# print(employee_check(work_hours))
 
+### Interactions between functions
+# Functions often use results from other functions. Create a simple guessing game to illustrate.
+# There will be 3 positions in the list, one is an 'O', a function will shuffle the list, another 
+# will take a player's guess, and finally another will check to see if it is correct.
+# This is based on classic carnival game. 
+
+# How to shuffle a list
+# example = [1,2,3,4,5]
+# from random import shuffle
+# shuffle(example)
+# print(example)
+
+### Create our game
+from random import shuffle
+mylist = [' ', 'o', ' ']
+
+def shuffle_list(mylist):
+    # take in list, return shuffled version
+    shuffle(mylist)
+
+    return mylist
+
+# print(mylist)
+# print(shuffle_list(mylist))
+
+def player_guess():
+    guess = ''
+    while guess not in ['0','1','2']:
+        # recall input() returns a string
+        guess = input("Pick a number: 0, 1, or 2: ")
+    return int(guess)
+
+player_guess()
+
+# check the user's guess. Notice we only print here, since we don't need
+# to save the user's guess or the shffled list.
+
+def check_guess(mylist,guess):
+    if mylist[guess] == 'O':
+        print('Correct Guess!')
+    else: 
+        print('Wrong! Better luck next time')
+        print(mylist)
+
+# Initial List
+mylist = [' ','O',' ']
+
+# Shuffle It
+mixedup_list = shuffle_list(mylist)
+
+# Get User's Guess
+guess = player_guess()
+
+# Check User's Guess
+#------------------------
+# Notice how this function takes in the input 
+# based on the output of other functions!
+check_guess(mixedup_list,guess)
