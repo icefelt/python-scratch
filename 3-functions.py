@@ -267,7 +267,7 @@ def player_guess():
         guess = input("Pick a number: 0, 1, or 2: ")
     return int(guess)
 
-player_guess()
+# player_guess()
 
 # check the user's guess. Notice we only print here, since we don't need
 # to save the user's guess or the shffled list.
