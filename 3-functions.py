@@ -165,17 +165,36 @@ After all this you begin writing the code you wish to execute.
 
 
 # Correct approach is to initiate a return False _after_ runnign through the entire loop
-def check_even_list(num_list):
-    # Go through each number
-    for number in num_list:
-        # Once we get a "hit" on an even number, we return True
-        if number % 2 == 0:
-            return True
-        # Don't do anything if its not even
-        else:
-            pass
-    # Notice the indentation! This ensures we run through the entire for loop    
-    return False
+# def check_even_list(num_list):
+#     # Go through each number
+#     for number in num_list:
+#         # Once we get a "hit" on an even number, we return True
+#         if number % 2 == 0:
+#             return True
+#         # Don't do anything if its not even
+#         else:
+#             pass
+#     # Notice the indentation! This ensures we run through the entire for loop    
+#     return False
 
-print(check_even_list([1,2,3]))
-print(check_even_list([1,3,5]))
+# print(check_even_list([1,2,3]))
+# print(check_even_list([1,3,5]))
+
+
+# Return all even numbers in a list
+# def check_even_list(num_list):
+#     even_numbers = []
+
+#     # iterate through each nuber
+#     for number in num_list:
+#         # once we match an even number, we append the even number
+#         if number % 2 == 0:
+#             even_numbers.append(number)
+#         # Don't do anything if it's NOT even
+#         else:
+#             pass
+#     return even_numbers
+
+# print(check_even_list([1,2,3,4,5,6]))
+# print(check_even_list([1,3,5,7]))
+
