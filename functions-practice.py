@@ -13,3 +13,8 @@ def lesser_of_two_evens(a,b):
         print(b)
 
 lesser_of_two_evens(4,12)
+
+### Animal Crackers
+# write a function that takes two-word string and returns True if 
+# both words begin with the same letter. 
+
