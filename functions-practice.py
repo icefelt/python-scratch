@@ -5,16 +5,24 @@
 # lesser_of_two_evens(2,4) --> 2
 # lesser_of_two_evens(2,5) --> 5
 
-def lesser_of_two_evens(a,b):
-    if a % 2 == 0 and b % 2 == 0:
-        if a < b:
-            print(a)
-    if a  % 2 == 1 or b % 2 == 1:
-        print(b)
+# def lesser_of_two_evens(a,b):
+#     if a % 2 == 0 and b % 2 == 0:
+#         if a < b:
+#             print(a)
+#     if a  % 2 == 1 or b % 2 == 1:
+#         print(b)
 
-lesser_of_two_evens(4,12)
+# lesser_of_two_evens(4,12)
 
 ### Animal Crackers
 # write a function that takes two-word string and returns True if 
 # both words begin with the same letter. 
+# animal_crackers('Levelheaded Llama') --> True
+# animal_crackers('Crazy Kangaroo') --> False
 
+def animal_crackers(text):
+    pass
+
+animal_crackers('Levelheaded Llama')
+
+animal_crackers('Crazy Kangaroo')
