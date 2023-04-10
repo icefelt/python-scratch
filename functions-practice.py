@@ -20,9 +20,13 @@
 # animal_crackers('Levelheaded Llama') --> True
 # animal_crackers('Crazy Kangaroo') --> False
 
+# split()
+# index[0]
+
 def animal_crackers(text):
-    pass
+    words = text.split()
+    return words[0][0] == words[1][0]
 
-animal_crackers('Levelheaded Llama')
-
-animal_crackers('Crazy Kangaroo')
+simple = animal_crackers('Levelheaded Llama')
+#simple = animal_crackers('Crazy Kangaroo')
+print(simple)
